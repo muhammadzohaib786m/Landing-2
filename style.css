@@ -1,14 +1,200 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
 }
 html, body{
     width: 100%;
     height: 100%;
+    overflow: hidden;
+   
+    }
+.main{
+    background: rgb(186,15,156);
+    background: linear-gradient(145deg, rgba(186,15,156,0.46) 36%, rgba(0,194,255,0.9808298319327731) 100%);
+    width: 100%;
+    height: 100%;
 }
-h1{
-    font-family:Arial, Helvetica, sans-serif ;
-    color: magenta;
-    font-size: large;
+nav{
+    width: 100%;
+    min-height: 100px;
+    background: rgb(17, 57, 58);
+    background: linear-gradient(11deg, rgba(34,193,195,0.55) 0%, rgba(0,155,242,0.67) 100%);
+    border-bottom: 4.5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: mediumvioletred;
+    padding: 0px 4%;
+}
+.c1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.c1 h3{
+    font-size: 20px;
+}
+
+.c1 i{
+    font-size: 20px;
+    padding: 5px 10px ;
+    border: 1.88px solid lightseagreen;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.c1 i:hover{
+    cursor: pointer;
+    opacity: 0.67;
+    background-color: darkcyan;
+    border: none;
+}
+nav h1{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+ 
+}
+nav button{
+    padding: 7px 12px ;
+    border-radius: 50px;
+    border:1.88px solid lightseagreen;
+    background-color: transparent;
+    font-size: 15px ;
+    font-weight: 560;
+}
+nav .btn2{
+    background-color: rgb(230, 112, 99);
+
+}
+nav button:hover{
+    cursor: pointer;
+    /* box-shadow: 5px 4px 6px rgba(255, 255, 255, 0.65); */
+    -webkit-box-shadow: inset 9px 13px 35px -11px rgba(0,0,0,0.96);
+    -moz-box-shadow: inset 9px 13px 35px -11px rgba(0,0,0,0.96);
+    box-shadow: inset 9px 13px 35px -11px rgba(0,0,0,0.96);
+}
+h1.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5.5rem;
+    color: lightskyblue;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+img{
+    width:320px;
+    height: 345px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 2.34%;
+}
+.ph1{
+    transform: translate(-50%,-50%) rotate(0deg);
+}
+.ph2{
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+.ph3{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+.ph4{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+.corner1{
+    position: absolute;
+    bottom: 3.5%;
+    left: 5%;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.links{
+   display: flex;
+   align-items:flex-end;
+   justify-content: end;
+   gap: 30px;
+   background-color: red;
+}
+.links #instagram{
+    position: absolute;
+    bottom: 8%;
+    right:15px;
+    font-size: 1.2rem;
+    color: lightsalmon;
+}
+.links #youtube{
+    position: absolute;
+    bottom: 8%;
+    right: 40px;
+    font-size: 1.2rem;
+    color: lightsalmon;
+}
+.links #twitch{
+    position: absolute;
+    bottom: 8%;
+    right: 65px;
+    font-size: 1.2rem;
+    color: lightsalmon;
+}
+
+.links span:hover{
+    cursor: pointer;
+
+}
+p{
+    position: absolute;
+    bottom: 3.5%;
+    right: 1%;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+@media (max-width:500px) {
+    nav button{
+        display:block;
+        margin:5px;
+    }
+    .links span {
+        margin:5px;
+    }
+    p{
+        width: 120px;
+        height: 30px;
+    }    
+}
+@media (max-width:410px) {
+    img{
+        width:300px;
+        height: 330px;
+        border-radius: 20px;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 2.34%;
+    }
+    nav button{
+    padding: 6px 11px;
+    border-radius: 40px;
+    border:1.88px solid lightseagreen;
+    background-color: transparent;
+    font-size: 13px ;
+    font-weight: 500;
+    }
+    .corner1{
+        width: 130px;
+        height: 30px;
+    }
     
 }
