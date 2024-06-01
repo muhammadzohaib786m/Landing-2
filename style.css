@@ -239,6 +239,13 @@ p{
     
 }
 @media (max-width:377px) {
+    h1.middle{
+        font-size: 2.7rem;
+        color: lightskyblue;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+    }
     .c1 h3{
         display:none;
     }
@@ -258,8 +265,8 @@ p{
          
         }
         img{
-            width:290px;
-            height: 320px;
+            width:240px;
+            height: 240px;
             border-radius: 20px;
             object-fit: cover;
             object-position: center;
